@@ -15,13 +15,11 @@
       background-color: #fff;
     }
 
-    /* Tailwind extension for custom crimson color */
     .text-crimson { color: crimson; }
     .bg-crimson { background-color: crimson; }
     .hover\:bg-crimson:hover { background-color: crimson; }
     .focus\:ring-crimson:focus { --tw-ring-color: crimson; }
 
-    /* Navbar */
     .navbar {
       background-color: #fff0f5;
       padding: 20px 60px;
@@ -81,7 +79,6 @@
       background-color: darkred;
     }
 
-    /* Footer */
     .footer-area {
       background-color: #333;
       color: #fff;
@@ -124,9 +121,9 @@
       <ul class="nav-links">
         <li><a href="/./flower-shop-website-main/index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/signup.html" class="nav-signup-btn">Sign Up</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html" class="nav-signup-btn">Sign Up</a></li>
       </ul>
     </div>
   </nav>
@@ -134,7 +131,7 @@
   <!-- Buy Now Section -->
   <div class="buy-now-container max-w-xl mx-auto mt-16 bg-pink-50 p-10 rounded-xl shadow-lg">
     <h2 class="text-2xl font-semibold text-center text-crimson mb-6">Complete Your Order</h2>
-    <form class="space-y-5">
+    <form class="space-y-5" id="orderForm">
       <div class="form-group">
         <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
         <input type="text" id="name" required
@@ -171,11 +168,10 @@
           class="w-full px-4 py-2 border rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-crimson"></textarea>
       </div>
 
-      <a href="./placeoder.html"
-  class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-md transition duration-300">
-  Place Order
-</a>
-
+      <button type="submit"
+        class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-md transition duration-300">
+        Place Order
+      </button>
     </form>
   </div>
 
@@ -187,6 +183,46 @@
       <small class="copy-right"> &copy; @2020-2023, FlowerShop.com. All rights reserved. </small>
     </div>
   </footer>
+
+  <!-- Validation Script -->
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form from submitting by default
+
+      const name = document.getElementById("name");
+      const address = document.getElementById("address");
+      const flower = document.getElementById("flower");
+      const phone = document.getElementById("phone");
+
+      if (name.value.trim() === "") {
+        alert("Please enter your full name.");
+        name.focus();
+        return;
+      }
+
+      if (address.value.trim() === "") {
+        alert("Please enter your delivery address.");
+        address.focus();
+        return;
+      }
+
+      if (flower.value === "") {
+        alert("Please select a flower.");
+        flower.focus();
+        return;
+      }
+
+      const phonePattern = /^[6-9]\d{9}$/;
+      if (!phonePattern.test(phone.value.trim())) {
+        alert("Please enter a valid 10-digit phone number.");
+        phone.focus();
+        return;
+      }
+
+      // All fields are valid, redirect
+      window.location.href = "./placeoder.html";
+    });
+  </script>
 
 </body>
 </html>
