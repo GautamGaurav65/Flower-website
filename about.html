@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Flower Shop</title>
+    <link rel="shortcut icon" href="image/favicon-icon.jpg" type="image/x-icon">
+
+    <style>
+        /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .crimson {
+      color: crimson;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff0f5;
+      padding: 20px 60px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: crimson;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background-color: crimson;
+      color: white;
+    }
+
+    .nav-signup-btn {
+      background-color: crimson;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 25px;
+    }
+
+    .nav-signup-btn:hover {
+      background-color: darkred;
+    }
+
+
+        /* About Section */
+        .about-us-section {
+            padding: 4rem 2rem;
+            background-color: #fff0f5;
+        }
+
+        .about-us-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about-text {
+            flex: 1 1 500px;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer-area {
+            background-color: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .footer-head-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-head-description {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .copy-right {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-us-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h2 class="logo"><span class="crimson">Flower</span>Shop</h2>
+      <ul class="nav-links">
+        <li><a href="/./flower-shop-website-main/index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/signup.html" class="nav-signup-btn">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- About Section -->
+    <section class="about-us-section">
+        <div class="about-us-container">
+            <div class="about-text">
+                <h1>About <span class="crimson">Us</span></h1>
+                <p>Welcome to FlowerShop – your destination for blooming beauty and natural elegance. Since our founding, we’ve been passionate about bringing joy, love, and serenity into your life with our carefully curated flowers.</p>
+                <p>We work with local growers to ensure every bouquet is fresh, vibrant, and sustainably sourced. Whether it's a celebration, a heartfelt gesture, or just a little treat for yourself, our flowers speak a thousand words.</p>
+                <p>Our dedicated team is here to make every flower experience unforgettable. Thank you for making us part of your special moments!</p>
+            </div>
+            <div class="about-image">
+                <img src="./flower-shop-website-main/image/about-flower.png" alt="About FlowerShop">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="footer-content">
+            <h3 class="footer-head-title"><span class="crimson">Flower</span>Shop</h3>
+            <small class="footer-head-description">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout</small>
+            <small class="copy-right"> &copy; @2020-2023, FlowerShop.com. All rights reserved. </small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Flower Shop</title>
+  <link rel="shortcut icon" href="image/favicon-icon.jpg" type="image/x-icon"/>
+
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .crimson {
+      color: crimson;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff0f5;
+      padding: 20px 60px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: crimson;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background-color: crimson;
+      color: white;
+    }
+
+    .nav-signup-btn {
+      background-color: crimson;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 25px;
+    }
+
+    .nav-signup-btn:hover {
+      background-color: darkred;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 80px 60px;
+      background-color: #fff0f5;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .contact-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .contact-details p {
+      font-size: 15px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .contact-form-box {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px 15px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: crimson;
+      box-shadow: 0 0 5px rgba(220, 20, 60, 0.2);
+    }
+
+    .contact-form input:hover,
+    .contact-form textarea:hover {
+      border-color: #dc143c;
+    }
+
+    .contact-form .submit-btn {
+      background-color: crimson;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form .submit-btn:hover {
+      background-color: darkred;
+    }
+
+    /* Footer */
+    .footer-area {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-head-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .footer-head-title:hover {
+      transform: scale(1.05);
+      color: crimson;
+    }
+
+    .footer-head-description {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .copy-right {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h2 class="logo"><span class="crimson">Flower</span>Shop</h2>
+      <ul class="nav-links">
+        <li><a href="/./flower-shop-website-main/index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/signup.html" class="nav-signup-btn">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-text">
+        <h1>Get In <span class="crimson">Touch</span></h1>
+        <p>If you have any questions, suggestions, or just want to say hi, feel free to drop us a message. We'd love to hear from you!</p>
+
+        <div class="contact-details">
+          <p><strong>📍 Address:</strong> 123 Bloom Street, Rose City, FL 45678</p>
+          <p><strong>📞 Phone:</strong> +1 (234) 567-890</p>
+          <p><strong>📧 Email:</strong> contact@flowershop.com</p>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-area">
+    <div class="footer-content">
+      <h3 class="footer-head-title"><span class="crimson">Flower</span>Shop</h3>
+      <small class="footer-head-description">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout</small>
+      <small class="copy-right"> &copy; @2020-2023, FlowerShop.com. All rights reserved. </small>
+    </div>
+  </footer>
+
+</body>
+</html>
