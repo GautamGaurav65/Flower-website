@@ -13,3 +13,7 @@ flower-shop-website/
 ├── signup.html          → User registration page
 ├── /image/              → Folder containing all flower and UI images
 ├── /css/ or inline      → Styling for all pages
+
+
+flower-website-store-gaurav.netlify.app 
+
